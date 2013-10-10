@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Welcome dum user!</h1>
+  <p>Sign Up Below!</p>
+  
+  <form action="/create_user" method="POST">
+    <label for="user_name">name:</label>
+    <input type="text" id="user_name" name="user[full_name]">
+    <br>
+    <label for="user_email">email:</label>
+    <input type="text" id="user_email" name="user[email]">
+    <br>
+    <label for="user_password">password:</label>
+    <input type="text" id="user_password" name="user[password]">
+    <input type="submit">
+  </form>
+
+  <br>
+  <br>
+
+  <form action='/login' method="POST">
+    <label for="login_email">email:</label>
+    <input type="text" id="user_email" name="login[email]">
+    <br>
+    <label for="login_password">password:</label>
+    <input type="text" id="login_password" name="login[password]">
+    <input type="submit">
+  </form>
+ 
+</div>
